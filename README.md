@@ -2,6 +2,8 @@
 
 > A template for using three.js with node.js modules and browserify and gulp and etc
 
+![Screenshot](screenshot.gif)
+
 ## Usage
 
 If you simply want a template to write your own apps, perhaps get [a fresh ZIP from the repo](https://github.com/sole/npm_three_template/archive/master.zip). 
@@ -20,7 +22,7 @@ Once that is done you can run...
 npm start
 ```
 
-this will build the project to the `build/` folder. Open `build/index.html` to see the results.
+this will build the project to the `build/` folder. Open `build/index.html` to see the results. It will give you... a rotating cube with a nice material as in the screenshot!
 
 It also starts up a file watching service, so if you modify any file on the `src` folder, the project will be rebuilt automatically and you just need to reload `index.html` in your browser.
 
