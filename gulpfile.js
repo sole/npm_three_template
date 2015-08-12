@@ -9,7 +9,7 @@ var srcDir = path.join(__dirname, 'src');
 
 gulp.task('build', ['build-src']);
 
-gulp.task('build-src', ['build-static-js', 'build-static-html', 'build-static-css']);
+gulp.task('build-src', ['build-static-js', 'build-static-html', 'build-static-css', 'build-static-data']);
 
 gulp.task('build-static-js', function() {
 	return youKnowWhat({
@@ -32,6 +32,11 @@ gulp.task('build-static-css', function() {
 	return gulp.src([
 		path.join(srcDir, 'css/style.css')
 	]).pipe(gulp.dest(path.join(buildDir, 'css')));
+});
+
+gulp.task('build-static-data', function() {
+	return gulp.src(path.join(srcDir, 'data/**/*'))
+		.pipe(gulp.dest(path.join(buildDir, 'data')));
 });
 
 gulp.task('watch', function () {

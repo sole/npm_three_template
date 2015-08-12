@@ -26,9 +26,10 @@ function init() {
 function initGraphics() {
 
 	rendererContainer = document.getElementById('renderer');
-	renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+	renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: true });
 	renderer.shadowMapEnabled = true;
 	renderer.shadowMapSoft = true;
+	renderer.setClearColor(0x000000, 0.1);
 
 	rendererContainer.appendChild(renderer.domElement);
 

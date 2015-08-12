@@ -55,3 +55,8 @@ scene.add(thingy);
 
 When the code is built, all these files will be joined together in a single file called `build/js/bundle.js`.
 
+## Data and CSS files
+
+Everything you put in the `css/` and `data/` directories will be copied automatically to the `build` folder. So you can use that to place assets that you need in your application.
+
+In the future we might want to preprocess the files in these directories to optimise them etc, instead of just plainly copying them.
